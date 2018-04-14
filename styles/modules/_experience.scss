@@ -1,0 +1,63 @@
+#experience {
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .company_name {
+    font-family: 'Franklin Gothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: $secondary-color;
+    margin-top: 25px;
+    @media (min-width: 768px) {
+      font-size: 24px;
+      margin-top: -0.4em;
+      margin-bottom: -9px;
+    }
+  }
+
+  .title_dates {
+    font-family: 'Franklin Gothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
+    color: $primary-color;
+  }
+
+  .title:after {
+    content: "// ";
+  }
+
+  .description {
+    font-family: 'Franklin Gothic Book';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    color: $primary-color;
+    line-height: 23px;
+  }
+
+  .job {
+    @media (min-width: 768px) {
+      margin-top: 38px;
+    }
+    margin-bottom: 60px;
+  }
+
+  .description+.company_name {
+    padding-top: 20px;
+  }
+
+  .content {
+    @media (min-width: 768px) {
+      padding-left: 42px;
+    }
+  }
+}

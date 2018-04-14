@@ -1,0 +1,39 @@
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0px;
+}
+
+ul li:before {
+  content: "•";
+  display: block;
+  float: left;
+  width: 1em;
+  color: $secondary-color;
+}
+
+ul li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+ul li ul {
+  list-style: none;
+  padding-left: 25px;
+}
+
+ul li ul li:before {
+  content: "○";
+  display: block;
+  float: left;
+  width: 1em;
+  color: $secondary-color;
+}
+
+ul li ul li {
+  line-height: 23px;
+}
+
+ul li ul li:last-of-type {
+  margin-bottom: 8px;
+}

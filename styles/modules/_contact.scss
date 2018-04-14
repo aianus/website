@@ -1,0 +1,40 @@
+#contact {
+  margin-top: -25px;
+  padding-bottom: 80px;
+
+  div.photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 768px) {
+      justify-content: flex-end;
+    }
+  }
+
+  img.photo {
+    max-width: 235px;
+  }
+
+  a.social-icon {
+    margin: 16px 6px;
+    background-size: 100% auto;
+    width: 70px;
+    height: 70px;
+    @media (min-width: 768px) {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  div.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    @media (min-width: 768px) {
+      justify-content: flex-start;
+    }
+  }
+}

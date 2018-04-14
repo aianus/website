@@ -1,0 +1,73 @@
+.hero {
+  background: url("../images/bg_texture.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  .intro {
+    font-family: 'Franklin Gothic';
+    font-weight: 500;
+    font-style: italic;
+    @include fluid-type(font-size, 0px, 768px, 12px, 24px);
+    color: $secondary-color;
+    margin: -8px;
+  }
+
+  .name {
+    font-family: 'Franklin Gothic';
+    font-weight: 500;
+    font-style: normal;
+    @include fluid-type(font-size, 0px, 768px, 36px, 72px);
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+  }
+
+  .nav {
+    margin-top: 17vh;
+    color: $inactive-color;
+    ol {
+      li+li:before {
+        content: " // ";
+      }
+      li {
+        display: inline;
+        a {
+          text-decoration: none;
+          font-family: 'Franklin Gothic Book';
+          font-style: normal;
+          font-weight: normal;
+          @include fluid-type(font-size, 0px, 768px, 8px, 16px);
+          color: $inactive-color;
+          text-transform: uppercase;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .contactbutton {
+    a {
+      cursor:pointer;
+      border: none;
+      border-radius: 6px;
+      padding: 9px 16px;
+      color: #A7D3D0;
+      font-family: 'Franklin Gothic';
+      font-weight: 200;
+      font-style: normal;
+      @include fluid-type(font-size, 0px, 768px, 10px, 16px);
+      background-color: $secondary-color;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    margin-left: -1vw;
+    margin-bottom: 11vh;
+  }
+}

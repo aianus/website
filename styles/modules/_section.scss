@@ -1,0 +1,41 @@
+.section-light {
+  background-color: #FFFFFF;
+}
+
+.section-dark {
+  background-color: $section-dark-color;
+}
+
+.section {
+  @media (min-width: 768px) {
+    padding-bottom: 130px;
+  }
+
+  .section-header {
+    padding: 60px 0px;
+    font-family: 'Franklin Gothic';
+    font-style: normal;
+    @include fluid-type(font-size, 0px, 768px, 12px, 24px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+  }
+  .section-header:before,
+  .section-header:after {
+    content: "";
+    height: 0;
+    border-top: 1px solid $primary-color;
+    bottom: 0;
+    width: 100px;
+  }
+  .section-header:before {
+    right: 100%;
+    margin-right: 10px;
+  }
+  .section-header:after {
+    left: 100%;
+    margin-left: 10px;
+  }
+}
